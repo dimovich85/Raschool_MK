@@ -1,0 +1,34 @@
+.media-max(@brk_point; @block){
+	@media screen and (max-width: @brk_point){
+		@block();
+	}
+}
+
+.media-min(@brk_point; @block){
+	@media screen and (min-width: @brk_point){
+		@block();
+	}
+}
+
+.media-range(@brk1; @brk2; @block){
+	@media screen and (min-width: @brk1) and (max-width: @brk2){
+		@block();
+	}
+}
+
+.pseudo(){
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.btn-reset(){
+	appearance: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+
+.ul-reset(){
+	list-style: none;
+}
